@@ -1,6 +1,8 @@
 def hello(x=""):
     if x == "":
         x = "Hello!"
-    else:
+    elif x[-1]=='!':
         x = "Hello," + x
+    else:
+        x="Hello, " + x+"!"
     return x

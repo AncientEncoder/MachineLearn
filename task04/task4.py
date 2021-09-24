@@ -7,6 +7,8 @@ class BankCard:
         if cost>self.total_sum :
             print("Not enough money to spent {0} dollars.".format(cost))
             raise ValueError
+        else:
+            self.total_sum-=cost
 
 
     @property
@@ -24,4 +26,4 @@ class BankCard:
 
 
     def __repr__(self):
-        return "To learn the balance you should put the money on the card, spent some money or get the bank data.The last procedure is not free and costs 1 dollar."
+        return "To learn the balance you should put the money on the card, spent some money or get the bank data. The last procedure is not free and costs 1 dollar."
